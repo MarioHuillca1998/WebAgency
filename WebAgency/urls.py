@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from WebAgency.views import home, nosotros, contacto,tours,tours_personalisados,traslados
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('home/', home),
+    path('nosotros/', nosotros),
+    path('contacto/', contacto),
+    path('tours/', tours),
+    path('tours_personalisados/', tours_personalisados),
+    path('traslados/', traslados)
+    
 ]
