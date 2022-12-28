@@ -3,10 +3,15 @@ from django.http import HttpResponse
 
 dominio = "http://127.0.0.1:8000/"
 rutas = {"home": dominio+"home", "nosotros": dominio+"nosotros", "contacto":dominio+"contacto", "tours":dominio+"tours"
-         ,"traslados":dominio+"traslados","tours_personalisados":dominio+"tours_personalisados",}
+         ,"traslados":dominio+"traslados","tours_personalisados":dominio+"tours_personalisados","menu":dominio+"menu",}
 
 def home(response):
     doc = loader.get_template("home.html")
+    salida = doc.render(rutas)
+    return HttpResponse(salida)
+
+def menu(response):
+    doc = loader.get_template("menu.html")
     salida = doc.render(rutas)
     return HttpResponse(salida)
 

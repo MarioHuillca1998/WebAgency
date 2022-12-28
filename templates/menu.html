@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= {% static "estilos/menu.css" %} >
+</head>
+<body>
+    <nav >
+        <p class="logo">Logo Marios</p>
+        <ul class="contenedor">
+            <li><a href="{{home}}">Home</a> </li>
+            <li class="tours"><a href="{{tours}}">Tours</a>
+                <ul class="sub-menu">
+                    <li>Sacsayhuaman</li>
+                    <li>Machupicchu</li>
+                    <li>Maras Moray</li>
+                </ul>
+            </li>
+            <li><a href="{{tours_personalisados}}">Tours Personalisados</a> </li>
+            <li><a href="{{traslados}}">Traslados</a> </li>
+            <li><a href="{{nosotros}}">Nosotros</a></li>
+            <li><a href="{{contacto}}">Contacto</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
