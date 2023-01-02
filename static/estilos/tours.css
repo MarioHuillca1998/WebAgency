@@ -1,11 +1,5 @@
-/* body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 120px;
-} */
 body{
-    display: flex;
+    display: block;
     width: 100%;
     align-items: center;
     justify-content: center;
