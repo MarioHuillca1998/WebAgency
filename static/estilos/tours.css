@@ -10,7 +10,7 @@ img{
 .container-all{
     position: relative;
     max-width: 1800px;
-    width: 1500px;
+    width: 100%;
     border-radius: 6px;
     overflow: hidden;
 }
