@@ -18,7 +18,7 @@ from django.urls import path
 from WebAgency.views import home, nosotros, contacto,tours,tours_personalisados,traslados,menu,blog
 
 urlpatterns = [
-    path('', menu),
+    path('', home),
     path('home/', home),
     path('nosotros/', nosotros),
     path('contacto/', contacto),
