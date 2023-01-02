@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 dominio = "http://127.0.0.1:8000/"
 rutas = {"home": dominio+"home", "nosotros": dominio+"nosotros", "contacto":dominio+"contacto", "tours":dominio+"tours"
-         ,"traslados":dominio+"traslados","tours_personalisados":dominio+"tours_personalisados","menu":dominio+"menu",}
+         ,"traslados":dominio+"traslados","tours_personalisados":dominio+"tours_personalisados","menu":dominio+"menu","blog":dominio+"blog",}
 
 def home(response):
     doc = loader.get_template("home.html")
@@ -30,4 +30,7 @@ def tours_personalisados(response):
 
 def traslados(response):
     return HttpResponse(loader.get_template("traslados.html").render(rutas))
+
+def blog(response):
+    return HttpResponse(loader.get_template("blog.html").render(rutas))
 

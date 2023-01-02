@@ -6,13 +6,7 @@
     
 }
 body{
-    height: 100vh;
-    background:url(/static/imagenes/sacsayhuaman-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: #FFFFFF;
-    
+    background-color: red;
 }
 nav{
     width: 100%;
@@ -50,15 +44,17 @@ li:hover{
 .sub-menu{
     display: none;
     position: absolute;
-    margin-top: 1.5vw;
+    margin-top: 1.9vw;
+    color: #FFFFFF;
+    
 }
 .sub-menu > li{
-    width: 190px;
-    transform: translateX(-20px);
+    width: 160px;
+    transform: translateX(-25px);
     border-bottom: solid 1px #fff;
     text-align: center;
     background-color: #393732;
-    opacity: 90%;
+    opacity: 95%;
 }
 .sub-menu > li:hover{
     background-color: #917737;
@@ -70,4 +66,8 @@ li:hover{
     .logo{
         display: none;
     }
+}
+.fa-brands{
+    font-size: 40px;
+    color: black;
 }

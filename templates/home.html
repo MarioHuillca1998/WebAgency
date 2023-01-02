@@ -1,17 +1,83 @@
-
 {% load static %}
 {% include "menu.html" %}
+<!-- {% include "menu.html" %} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/estilos/home.css">
   <title>Document</title>
 </head>
 <body>
-  HOME
+
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/imagenes/sacsayhuaman-2.jpg" class="d-block w-100 imagen1" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/imagenes/Foto1.jpg" class="d-block w-100 imagen1" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="/static/imagenes/Foto2.jpg" class="d-block w-100 im imagen1" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+  <!-- <div class="card" style="width: 18rem;">
+    <img src="/static/imagenes/sacsayhuaman-2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div> -->
+
+ 
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  <div class="container-all">
+    <input type="radio" id="1" name="image-slide" hidden>
+    <input type="radio" id="2" name="image-slide" hidden>
+    <input type="radio" id="3" name="image-slide" hidden>
+
+    <div class="slide">
+      <div class="item-slide">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </div>
+      <div class="item-slide">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </div>
+      <div class="item-slide">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="pagination">
+      <label class="pagination-item" for="1">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </label>
+      <label class="pagination-item" for="2">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </label>
+      <label class="pagination-item" for="3">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </label>
+    </div>
+  </div>
+
 </body>
 </html>
   
- 
+  
