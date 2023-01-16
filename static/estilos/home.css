@@ -109,9 +109,12 @@ img{
     }
     100%{
         transform: translate3d(calc(-100% * 2), 0, 0);
-    }
-    
+    }     
  }
+ /* Estilos de los cards */
+ 
+
+
  .titulo{
     text-align: center;
     margin-top: 20px;

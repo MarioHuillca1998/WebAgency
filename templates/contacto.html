@@ -6,11 +6,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "estilos/contacto.css" %}>
     <title>Document</title>
 </head>
-<body> 
-    <div>
-        <h1>CONTACTO</h1>
-    </div>  
+<body>
+    
+    <div class="container-form">
+        <div class="info-form">
+            <h1>Contactenos</h1>
+            <p>somos la empresa muña travel IERL una empresa de confianza y de largo 
+                recorrido sirvase a contactarse con nosotros enpresa creada por la familia rojas taipe 
+                actual dueño Christian Josue Rojas Taipe(Tour guide)Agencia de Viajes y Turismo.
+                Las maravillas esperan por ti!! 
+            </p>
+            <a href="#"><i class="fa fa-phone">
+            </i>Christian Josue Rojas Taipe(950738084)</a>
+            <i class="fa-solid fa-envelope">
+                <a href="#">Muña_travel_EIRL@gmail.com</a></i>
+                <br>
+            <i class="fa-solid fa-map">
+                <a href="#">Ciudad , Pais</a></i>
+            
+
+        </div>
+        <form action="#" autocomplete="off">
+            <input type="text"name="nombre"
+            placeholder="ingresa tu nombre"
+            class="campo">
+            <input type="email" name="email"
+            placeholder="Ingresa tu correo"
+            class="campo">
+            <textarea name="mensaje"
+             placeholder="Ingresa tu mensaje">
+            </textarea>
+            <input type="submit" name="enviar"
+             value="enviar mensaje" class="btn-enviar">
+        </form>
+        
+    </div>
+    <img src={% static "imagenes/machupicchu1.jpeg" %} alt="center"margin">
+</body>
+</html>
+  
 </body>
 </html>
