@@ -2,43 +2,244 @@
 {% include "menu.html" %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={% static "estilos/tours.css" %}>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href={% static "estilos/tours.css" %}>
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="container-all">
-        <input type="radio" id="1" name="image-slide" hidden>
-        <input type="radio" id="2" name="image-slide" hidden>
-        <input type="radio" id="3" name="image-slide" hidden>
-    
-        <div class="slide">
-          <div class="item-slide">
-            <img src="/static/imagenes/Foto2.jpg" alt="">
+  <div class="container-all">
+    <input type="radio" id="1" name="image-slide" hidden>
+    <input type="radio" id="2" name="image-slide" hidden>
+    <input type="radio" id="3" name="image-slide" hidden>
+
+    <div class="slide">
+      <div class="item-slide">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </div>
+      <div class="item-slide">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </div>
+      <div class="item-slide">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="pagination">
+      <label class="pagination-item" for="1">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </label>
+      <label class="pagination-item" for="2">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </label>
+      <label class="pagination-item" for="3">
+        <img src="/static/imagenes/Foto2.jpg" alt="">
+      </label>
+    </div>
+  </div><br>
+  <h1 class="text-center"> Tours</h1>
+  <!-- Inner -->
+  <div id="1" class="carousel-inner py-4">
+    <!-- Single item -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="/static/imagenes/city.png" class="card-img-top" alt="Waterfall" />
+              <div class="card-body">
+                <h5 class="card-title">Cusco City Tour</h5>
+                <p class="card-text">
+                  Conoce lo mejor de la ciudad de Cusco y deléitate de su historia y belleza arquitectónica! En este
+                  tour visitaras los mejores atractivos dentro de la ciudad como La Catedral de Cusco, El templo
+                  Qoricancha, y los sitios Inca como Tambomachay, Pucapucara, Qenqo y la famosa fortaleza Inca de
+                  Sacsayhuamán!
+                </p>
+                <a href="#!" class="btn btn-primary">Reservar Ahora</a>
+              </div>
+            </div>
           </div>
-          <div class="item-slide">
-            <img src="/static/imagenes/Foto2.jpg" alt="">
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img src="/static/imagenes/humantai.jpg" class="card-img-top" alt="Sunset Over the Sea" />
+              <div class="card-body">
+                <h5 class="card-title">Humantay Lake Tour</h5>
+                <p class="card-text">
+                  Visita una de las lagunas mas bonitas y mágicas del Perú y déjate rodear por las impresionantes
+                  montañas de Salkantay y Humantay mientras contemplas las aguas turquesas y la vista impresionante que
+                  ofrece el lugar.
+                  Todo esto en servicio privado en el que el guiado y el transporte solo será para nosotros, así como
+                  los horarios de salida y estadía en la Montaña de Colores y Valle Rojo son totalmente personalizables!
+                </p>
+                <a href="#!" class="btn btn-primary">Reservar Ahora</a>
+              </div>
+            </div>
           </div>
-          <div class="item-slide">
-            <img src="/static/imagenes/Foto2.jpg" alt="">
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img src="/static/imagenes/maras.png" class="card-img-top" alt="Sunset over the Sea" />
+              <div class="card-body">
+                <h5 class="card-title">Maras Moray Tour </h5>
+                <p class="card-text">
+                  ¡Disfruta de un día espectacular! En este recorrido visitaremos las famosas minas de sal de Maras, un
+                  lugar impresionante donde veremos la forma de extraer sal desde la antigüedad y también visitaremos
+                  Moray, uno de los sitios arqueológicos más misteriosos e impresionantes por la forma de la
+                  construcción.
+                </p>
+                <a href="#!" class="btn btn-primary">Reservar Ahora</a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="col-lg-4">
+            <div class="card">
+              <img src="/static/imagenes/machupicchu-peru-1024x698.png" class="card-img-top" alt="Waterfall" />
+              <div class="card-body">
+                <h5 class="card-title">Machupicchu by car 2 days </h5>
+                <p class="card-text">
+                  Visita una de las lagunas mas bonitas y mágicas del Perú y déjate rodear por las impresionantes
+                  montañas de Salkantay y Humantay mientras contemplas las aguas turquesas y la vista impresionante que
+                  ofrece el lugar.
+                  Todo esto en servicio privado en el que el guiado y el transporte solo será para nosotros, así como
+                  los horarios de salida y estadía en la Montaña de Colores y Valle Rojo son totalmente personalizables!
+                </p>
+                <a href="#!" class="btn btn-primary">Reservar Ahora</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img src="/static/imagenes/Morada.png" class="card-img-top" alt="Sunset Over the Sea" />
+              <div class="card-body">
+                <h5 class="card-title">Morada de Dioses</h5>
+                <p class="card-text">
+                  La Morada de los Dioses del Cusco también es conocido como Apukunaq Tianan del Cusco y viene a ser un
+                  complejo de esculturas líticas talladas recientemente por un cusqueño de nombre Michel de Titan
+                  Monteagudo Mejía.
+                </p>
+                <a href="#!" class="btn btn-primary">Reservar Ahora</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 d-none d-lg-block">
+            <div class="card">
+              <img src="/static/imagenes/7colors.png" class="card-img-top" alt="Sunset over the Sea" />
+              <div class="card-body">
+                <h5 class="card-title">Montaña 7 Colores</h5>
+                <p class="card-text">
+                  Dejate sorpreder con Palccoyo, un lugar increible y muy colorido conformado con 3 montañas de Colores,
+                  un bosque de piedras a mas de 5000msnm y una vista espectacular de la montaña mas alta de Cusco, el
+                  imponete Ausangate (6380 msnm). En este tour tambien conoceremos los tres puentes de Checacupe,
+                  incluyendo un puente Inca y un puente colonial. Tambien tendremos la oportunidad de concoer la
+                  comunidad de Palccoyo asi como el estilo de vida de sus pobladores a mas de 4000 msnm. En la temporada
+                  de lluvias (Diciembre a Febrero tambien se puede observar el famoso Rio Rojo.
+                </p>
+                <a href="#!" class="btn btn-primary">Reservar Ahora</a>
+              </div>
+            </div>
           </div>
         </div>
-    
-        <div class="pagination">
-          <label class="pagination-item" for="1">
-            <img src="/static/imagenes/Foto2.jpg" alt="">
-          </label>
-          <label class="pagination-item" for="2">
-            <img src="/static/imagenes/Foto2.jpg" alt="">
-          </label>
-          <label class="pagination-item" for="3">
-            <img src="/static/imagenes/Foto2.jpg" alt="">
-          </label>
+      </div>
+    </div>
+
+    <br>
+
+
+
+    <!-- Inner -->
+  </div>
+  <!-- Carousel wrapper -->
+
+  <footer>
+
+    <div class="container-footer-all">
+
+      <div class="container-body">
+
+        <div class="colum1">
+          <h1>Navegacion de links</h1>
+          <a href="{{nosotros}}">Nosotros</a>
+          <a href="{{home}}">T y C</a>
+          <a href="{{blog}}">Blogs</a>
+
+        </div>
+
+        <div class="colum2">
+
+          <h1>Redes Sociales</h1>
+
+          <div class="row1">
+            <img src={% static "imagenes/facebook.png" %}>
+            <label>Siguenos en Facebook</label>
+          </div>
+
+          <div class="row1">
+            <img src={% static "imagenes/instagram.png" %}>
+            <label>Siguenos en Instagram</label>
+          </div>
+          <div class="row1">
+            <img src="icon/google-plus.png">
+            <label>Siguenos en Google Plus</label>
+          </div>
+          <div class="row1">
+            <img src="icon/pinterest.png">
+            <label>Siguenos en Pinteres</label>
+          </div>
+
+
+        </div>
+
+        <div class="colum3">
+
+          <h1>Informacion Contactos</h1>
+
+          <div class="row2">
+            <img src={% static "imagenes/house.png" %}>
+            <label>Urb los nogales A-4 San sebastian - cusco</label>
+          </div>
+
+          <div class="row2">
+            <img src={% static "imagenes/smartphone.png" %}>
+            <label>+51-928-200-398</label>
+          </div>
+
+          <div class="row2">
+            <img src={% static "imagenes/contact.png" %}>
+            <label>info@muñatravel.com</label>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container-footer">
+      <div class="footer">
+        <div class="copyright">
+          © 2017 Todos los Derechos Reservados | <a href="">Munay Travel</a>
+        </div>
+
+        <div class="information">
+          <a href="">Informacion Compañia</a> | <a href="">Politica y privacidad</a> | <a href="">Terminos y
+            Condiciones</a>
         </div>
       </div>
 
+    </div>
+
+  </footer>
 </body>
+
+</html>
+</body>
+
 </html>
